@@ -11,7 +11,7 @@ class InitState extends FlxState
 	{
 		super.create();
 
-		FlxG.resizeWindow(256 * 4, 256 * 4);
+		FlxG.resizeWindow(256 * 3, 256 * 3);
 
 		if (Compiler.getDefine('SCANLINE_TEST') == "1")
 			FlxG.switchState(ScanlineTest.new);
