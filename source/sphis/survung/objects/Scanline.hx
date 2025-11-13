@@ -18,9 +18,7 @@ class Scanline extends FlxSprite
 	{
 		tick++;
 
-		if (tick % 2 == 0)
-			offset.set(0, -1);
-		else
-			offset.set(0, 0);
+		if (tick % 6 == 0)
+			offset.set(0, (offset.y == -1) ? 0 : -1);
 	}
 }
